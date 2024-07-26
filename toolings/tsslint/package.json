@@ -1,5 +1,5 @@
 {
-	"name": "tsslint-config",
+	"name": "@toolings/tsslint-config",
 	"type": "module",
 	"version": "0.0.0",
 	"private": true,
@@ -11,9 +11,6 @@
 		}
 	},
 	"main": "./src/index.ts",
-	"peerDependencies": {
-		"@tsslint/config": "^1.0.14"
-	},
 	"dependencies": {
 		"@tsslint/config": "^1.0.14",
 		"@tsslint/eslint": "^1.0.14"

@@ -1,9 +1,9 @@
-import type { Config } from '@tsslint/config';
+import { defineConfig } from '@tsslint/config';
 
 import { definePlugin } from '@tsslint/config';
 import { loadPluginRules } from '@tsslint/eslint';
 
-const tssLintConfig: Config = {
+export default defineConfig({
 	rules: {
 		...(await loadPluginRules({
 			'@typescript-eslint/await-thenable': 'error',
@@ -43,13 +43,11 @@ const tssLintConfig: Config = {
 					skipCompoundAssignments: false,
 				},
 			],
-			// '@typescript-eslint/return-await': ['error', 'always'],
+			// '@typescript-eslint/return-await': ['error', 'always'], // Not working
 		})),
 	},
 	plugins: [createIngorePlugin(/\/\/ @tsslint-ignore/g)],
-};
-
-export default tssLintConfig;
+})
 
 function createIngorePlugin(pattern: RegExp) {
 	return definePlugin(({ languageService }) => ({
