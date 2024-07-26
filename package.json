@@ -1,0 +1,13 @@
+{
+	"name": "monorepo",
+	"type": "module",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"lint:ts": "npx tsslint --project ./tsconfig.lint.json"
+	},
+	"devDependencies": {
+		"tsslint-config": "workspace:*",
+		"@tsslint/cli": "^1.0.14"
+	}
+}
