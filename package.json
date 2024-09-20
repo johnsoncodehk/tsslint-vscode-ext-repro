@@ -4,11 +4,14 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"lint": "npx tsslint --project ./tsconfig.lint.json"
+		"lint": "npx tsslint --project ./tsconfig.json"
 	},
 	"devDependencies": {
-		"@toolings/tsslint-config": "workspace:*",
 		"@tsslint/cli": "^1.0.17",
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"@tsslint/config": "^1.0.17",
+		"@tsslint/eslint": "^1.0.17",
+		"@typescript-eslint/eslint-plugin": "^8.4.0",
+		"eslint": "^8.57.0"
 	}
 }
