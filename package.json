@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@toolings/tsslint-config": "workspace:*",
-		"@tsslint/cli": "^1.0.14",
+		"@tsslint/cli": "^1.0.17",
 		"typescript": "^5.5.4"
 	}
 }

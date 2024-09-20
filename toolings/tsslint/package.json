@@ -6,13 +6,19 @@
 	"description": "TSSLint configuration",
 	"exports": {
 		".": {
-			"import": "./src/index.ts",
-			"require": "./src/index.ts"
+			"import": "./src/index.js",
+			"require": "./src/index.js",
+			"types": "./src/index.d.ts"
 		}
 	},
-	"main": "./src/index.ts",
+	"main": "./src/index.js",
+	"types": "./src/index.d.ts",
 	"dependencies": {
-		"@tsslint/config": "^1.0.14",
-		"@tsslint/eslint": "^1.0.14"
+		"@tsslint/config": "^1.0.17",
+		"@tsslint/eslint": "^1.0.17",
+		"@typescript-eslint/eslint-plugin": "^8.4.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0"
 	}
 }
