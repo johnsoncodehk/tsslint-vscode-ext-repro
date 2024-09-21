@@ -1,3 +1,2 @@
-# tsslint-vscode-ext-repro
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/joris-fonck-loreal/tsslint-vscode-ext-repro)
+1. Run `pnpm install`
+2. Run `pnpm lint`
